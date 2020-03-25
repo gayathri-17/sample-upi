@@ -1,0 +1,76 @@
+/**
+ * This file contains the application's colors.
+ *
+ * Define color here instead of duplicating them throughout the components.
+ * That allows to change them more easily later on.
+ */
+
+export default {
+  transparent: 'rgba(0,0,0,0)',
+  suvaGrey: '#898989', // default text color
+  mediumTurquoise: '#3AD1BF', // accent/theme color for the entire app
+  ghostWhite: '#F6F7FB', // background color for input field
+  white: '#FFFFFF',
+  coralRed: '#FF4747', // represents an error content
+  whiteSmoke: '#F2F2F2',
+  shadowColor: '#CECECE', // view shadow color
+  disableViewColor: '#F2F2F2',
+  gradientStartColor: '#009AD5',
+  gradientEndColor: '#00CCC7',
+  textGray: '#b6b6b6',
+  viewBorderColor: '#E0DFE6',
+  dropDownBorder: '#EAEAEA',
+  lightGrey: '#DADADA',
+  passCodeBorder: 'rgba(137, 137, 137, 0.05)',
+  gradientRed: '#FF875E',
+  pink: '#FE67AD',
+  red: '#FE7688',
+  tabsGrey: '#E2E2E5',
+  secondryGreen: '#31C5C3',
+  cyanBlue: '#466170',
+  snowGrey: '#F9F9F9',
+  hawkesBlue: '#E1E2E6',
+  CrayolaCrystal: '#D5D5D5',
+  steelBlue: '#3483C4',
+  darkBlue: '#8363F9',
+  green: '#3FC070',
+  ethBlue: '#2E84C1',
+  dashBlue: '#119BD2',
+  LightGrayishBlue: '#C9D6DF',
+  USDCurrency: '#8363F9',
+  bitcoinCurrency: '#FF826B',
+  dashCurrency: '#119BD2',
+  etheriumCurrency: '#2E84C1',
+  euroCurrency: '#3BAFCA',
+  curiousBlue: '#3483C4',
+  aliceBlue: '#ECF1F5',
+  bitcoinGradientStart: '#fc7c7c',
+  searchInputColor: 'rgba(142, 142, 147, 0.12)',
+  greySuit: '#8E8E93',
+  black: '#000000',
+  whisperColor: '#E5E5E5',
+  switchBorderActive: 'rgb(100, 100, 100)',
+  switchBorderinActive: 'rgb(80, 80, 80)',
+  boxBorder: '#CCCCCC',
+  blurColor: 'rgba(100,100,100, 0.8)',
+  ethGradientStart: '#7656E7',
+  ethGradientEnd: '#256FB4',
+  dashGradientStart: '#33C6B3',
+  dashGradientEnd: '#1688C8',
+  flamePea: '#B86346',
+  endeavour: '#0C5D96',
+  cerulean: '#076D96',
+  btcInput: '#FF875E',
+  dimBackground: 'rgba(0,0,0,0.5)',
+  silver: '#C4C4C4',
+  gray70: '#B3B3B3',
+  textLightGray: '#DBDBDB',
+  euroGradientStart: '#319EBB',
+  euroGradientEnd: '#3ACB14',
+  usdGradientStart: '#E450E4',
+  usdGradientEnd: '#6F44F8',
+  referralGradientStart: '#39D0BF',
+  referralGradientStop: '#139DD1',
+  lightBlack: '#595959',
+  dropDownBorderBottom: '#999',
+}

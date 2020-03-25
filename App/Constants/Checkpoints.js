@@ -1,0 +1,10 @@
+export default {
+  POINT_ZERO: 0,
+  POINT_ONE: 1,
+  POINT_TWO: 2,
+  POINT_THREE: 3,
+  POINT_FOUR: 4,
+  POINT_FIVE: 5,
+  POINT_SIX: 6,
+  POINT_SEVEN: 7,
+}
