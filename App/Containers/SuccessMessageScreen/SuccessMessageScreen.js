@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
-import { Text, View, SafeAreaView } from 'react-native';
+import { Text, View, SafeAreaView, ScrollView } from 'react-native';
 import styles from 'App/Containers/SuccessMessageScreen/SuccessMessageScreenStyle'
 import SvgIcon from 'App/Components/SvgIcon/SvgIcon'
 import CommonIcons from 'App/Assets/Images/Svg/CommonIcons'
-import BottomButton from 'App/Components/BottomButton/BottomButton'
+import CustomButton from 'App/Components/CustomButton/CustomButton'
 import Line from 'App/Components/Line/Line'
 import I18n from 'App/Localization/I18n'
 
@@ -16,6 +16,7 @@ export default class SuccessMessageScreen extends Component {
     const text = 'we have received your documents, the verification may take a few hours, but it can take longer depending on specific cases, we will send you a notification when its done.'
     return (
       <SafeAreaView style={[styles.container]}>
+         <ScrollView contentContainerStyle={styles.container}>
         <View style={styles.headerBar}>
           <Text style={[styles.logoText]}>
             <Text style={styles.mercuryText}>{I18n.t('MERCURY_DOT')}</Text>
@@ -37,22 +38,27 @@ export default class SuccessMessageScreen extends Component {
         </View>
 
         <View style={styles.bottomContainer}>
-          <BottomButton
-            continueBtnText={I18n.t('CONTINUE_BUTTON')}
-            closeBtnText={I18n.t('CLOSE_APP')}
-            onContinueBtnClick={this.onContinueClick}
-            onCloseBtnClick={this.onCloseClick}
+          <CustomButton
+            primaryBtnText={I18n.t('CONTINUE_BUTTON')}
+            secondaryBtnText={I18n.t('CLOSE_APP')}
+            withPrimaryBtnGreyBg={false}
+            withSecondaryBtnBorder={false}
+            onPrimaryBtnClick={this.onPrimaryBtnClick}
+            onSecondaryBtnClick={this.onSecondaryBtnClick}
+            primaryBtnTestId={''}
+            secondaryBtnTestId={''}
           />
         </View>
+        </ScrollView>
       </SafeAreaView>
     )
   }
 
-  onContinueClick = () => {
+  onPrimaryBtnClick = () => {
     alert('continue');
   }
 
-  onCloseClick = () => {
+  onSecondaryBtnClick = () => {
     alert('close');
   }
 
